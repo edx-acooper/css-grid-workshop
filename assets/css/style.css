@@ -108,6 +108,24 @@ section {
   box-shadow: 2px 2px 8px rgba(0,0,0, 0.25);
 }
 
+/* TODO: USE CSS GRID */
+.lead {
+
+}
+
+/* TODO: USE CSS GRID */
+.lead {
+  
+}
+
+.info {
+
+}
+
+.clarity {
+  
+}
+
 .lead span {
   text-transform: uppercase;
   font-family: "Fira Code", monospace;
