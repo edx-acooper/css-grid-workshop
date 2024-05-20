@@ -45,6 +45,7 @@ p {
 
 section {
   margin-bottom: 40px;
+  padding: 20px;
 }
 
 .cta {
@@ -110,20 +111,25 @@ section {
 
 /* TODO: USE CSS GRID */
 .lead {
-
-}
-
-/* TODO: USE CSS GRID */
-.lead {
-  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
 
+.info h3 {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: flex-start;
 }
 
 .clarity {
-  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .lead span {
@@ -133,12 +139,19 @@ section {
 
 /* TODO: Switch to CSS GRID */
 .sponsors {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
   gap: 40px;
 }
 
 .sponsors img {
   width: auto;
   height: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .info, .sponsors, .clarity, .lead {
+    grid-template-columns: auto;
+  }
 }
