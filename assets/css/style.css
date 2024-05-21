@@ -1,5 +1,5 @@
 :root {
-  --base-text: #232028;
+  --base-dark: #232028;
 }
 
 *, html {
@@ -10,7 +10,7 @@
 
 a {
   text-decoration: none;
-  color: var(--base-text);
+  color: var(--base-dark);
   background-color: transparent;
   transition: background-color 400ms ease, color 400ms ease;
 }
@@ -21,7 +21,7 @@ a:hover {
 
 body {
   font-family: Lato, Arial, Helvetica, sans-serif;
-  color: var(--base-text);
+  color: var(--base-dark);
   background: whitesmoke;
   transition: background-color 400ms ease, color 400ms ease;
 }
@@ -57,7 +57,7 @@ section {
   box-shadow: 1px 1px 4px rgba(0,0,0, 0.25);
   border-radius: 16px;
   padding: 8px 12px;
-  background-color: var(--base-text);
+  background-color: var(--base-dark);
   color: white;
   margin-right: 8px;
 }
@@ -66,7 +66,7 @@ section {
   border-radius: 16px;
   padding: 8px 12px;
   background: white;
-  color: var(--base-text);
+  color: var(--base-dark);
 }
 
 .info i {
@@ -163,12 +163,12 @@ section {
 
 body.dark {
   color: whitesmoke;
-  background: var(--base-text);
+  background: var(--base-dark);
 }
 
 body.dark a {
   color: whitesmoke;
-  background: var(--base-text);
+  background: var(--base-dark);
   background-color: transparent;
 }
 
