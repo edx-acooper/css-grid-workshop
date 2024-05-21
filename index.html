@@ -103,10 +103,16 @@
   </main>
   <script>
     const toggleEl = document.querySelector('.toggle');
+    /** 
+     * Checks localStorage for stored mode if no mode is saved in localStorage
+     * mode falls back to 'light' mode as the default value
+    */
     const mode = localStorage.getItem('mode') || 'light';
 
+    /* Adds the light/dark mode class to the body element */
     document.body.classList.add(mode);
 
+    /* Toggles between light/dark mode */
     toggleEl.addEventListener('click', function() {
       if (document.body.classList.contains('dark')) {
         document.body.classList.remove('dark');
