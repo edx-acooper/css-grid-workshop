@@ -181,6 +181,16 @@ body.dark .info i {
   color: whitesmoke;
 }
 
+body.dark .logo,
+body.dark .sponsors img {
+  filter: invert(100%);
+}
+
+body.dark .cta {
+  color: var(--base-dark);
+  background-color: whitesmoke;
+}
+
 
 @media screen and (max-width: 768px) {
   .info, .sponsors, .clarity, .lead {
