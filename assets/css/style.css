@@ -11,6 +11,8 @@
 a {
   text-decoration: none;
   color: var(--base-text);
+  background-color: transparent;
+  transition: background-color 400ms ease, color 400ms ease;
 }
 
 a:hover {
@@ -20,6 +22,8 @@ a:hover {
 body {
   font-family: Lato, Arial, Helvetica, sans-serif;
   color: var(--base-text);
+  background: whitesmoke;
+  transition: background-color 400ms ease, color 400ms ease;
 }
 
 h1,h2,h3,h4 {
@@ -70,6 +74,7 @@ section {
   border-radius: 8px;
   padding: 8px;
   margin-right: 8px;
+  transition: background-color 400ms ease, color 400ms ease;
 }
 
 .info--question i {
@@ -90,6 +95,7 @@ section {
   display: flex;
   justify-content: space-between;
   padding: 20px;
+  flex-wrap: wrap;
 }
 
 .navbar .logo {
@@ -123,13 +129,14 @@ section {
 
 .info h3 {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto 1fr;
   align-items: flex-start;
 }
 
 .clarity {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
 
 .lead span {
@@ -149,6 +156,31 @@ section {
   width: auto;
   height: 24px;
 }
+
+.feature img {
+  max-width: 100%;
+}
+
+body.dark {
+  color: whitesmoke;
+  background: var(--base-text);
+}
+
+body.dark a {
+  color: whitesmoke;
+  background: var(--base-text);
+  background-color: transparent;
+}
+
+body.dark .navbar nav {
+  box-shadow: 2px 2px 8px rgba(122,122,122, 0.125);
+}
+
+body.dark .info i {
+  box-shadow: 1px 1px 4px rgba(122,122,122, 0.25);
+  color: whitesmoke;
+}
+
 
 @media screen and (max-width: 768px) {
   .info, .sponsors, .clarity, .lead {
