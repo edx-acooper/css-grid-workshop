@@ -45,6 +45,7 @@ h3 {
 
 p {
   margin-bottom: 16px;
+  line-height: 1.5rem;
 }
 
 section {
@@ -93,6 +94,7 @@ section {
 
 .navbar {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   padding: 20px;
   flex-wrap: wrap;
@@ -101,6 +103,7 @@ section {
 .navbar .logo {
   width: 100px;
   display: inline-block;
+  margin-bottom: 12px;
 }
 
 .navbar .logo img {
@@ -113,6 +116,7 @@ section {
   padding: 12px 20px;
   border-radius: 20px;
   box-shadow: 2px 2px 8px rgba(0,0,0, 0.25);
+  margin-bottom: 12px;
 }
 
 /* TODO: USE CSS GRID */
@@ -153,8 +157,8 @@ section {
 }
 
 .sponsors img {
-  width: auto;
-  height: 24px;
+  max-width: auto;
+  height: 40px;
 }
 
 .feature img {
@@ -183,6 +187,7 @@ body.dark .info i {
 
 body.dark .logo,
 body.dark .sponsors img {
+  /* Inverts the png logo image color */
   filter: invert(100%);
 }
 
